@@ -8289,7 +8289,7 @@ var Home = () => {
 
 
 var App = () => {
-  return /*#__PURE__*/react.createElement(HashRouter, null, /*#__PURE__*/react.createElement(store_StoreProvider, null, /*#__PURE__*/react.createElement(Switch, null, /*#__PURE__*/react.createElement(Route, {
+  return /*#__PURE__*/react.createElement(BrowserRouter, null, /*#__PURE__*/react.createElement(store_StoreProvider, null, /*#__PURE__*/react.createElement(Switch, null, /*#__PURE__*/react.createElement(Route, {
     exact: true,
     path: "/"
   }, /*#__PURE__*/react.createElement(Home_Home, null)), /*#__PURE__*/react.createElement(Route, {

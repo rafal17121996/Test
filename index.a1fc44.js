@@ -8020,7 +8020,7 @@ var Search = () => {
   } = (0,react.useContext)(StoreContext);
   (0,react.useEffect)(() => {
     if (query.length > 2) {
-      axios_default().get("https://unsplash.com/nautocomplete/".concat(query)).then(res => {
+      axios_default().get("/nautocomplete/".concat(query)).then(res => {
         var auto = res.data.autocomplete;
         setAutocomplete(auto);
         setIsOpen(true);

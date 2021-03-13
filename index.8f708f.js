@@ -8018,9 +8018,10 @@ var Search = () => {
   var {
     isMobile
   } = (0,react.useContext)(StoreContext);
+  (axios_default()).defaults.baseURL = 'https://unsplash.com/nautocomplete';
   (0,react.useEffect)(() => {
     if (query.length > 2) {
-      axios_default().get("/nautocomplete/".concat(query)).then(res => {
+      axios_default().get("/".concat(query)).then(res => {
         var auto = res.data.autocomplete;
         setAutocomplete(auto);
         setIsOpen(true);
